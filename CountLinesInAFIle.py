@@ -4,7 +4,7 @@ count=0
 for file in xfile:
     count=count+1
     if file.startswith("for"):
-        print(file.rstrip())        //to eliminate extra line space
+        print(file.rstrip())        #to eliminate extra line space
     #if not file.startwith("for")
 print(count)
 xfile=open("findIntegerInString.py")
