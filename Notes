@@ -34,16 +34,18 @@ fruit.find(" ",index)   // find " " after the given index
 math.isnan()
 open(filename,mode)     //mode=read,write
 length of 'X\nY'will be 3
-string is immutable but list of numbers in immutable
+string is immutable but list of numbers in mutable
 range(4) returns [0,1,2,3]
 list can be concatenated as well as sliced in the same as as we do in starting
-list.append()
-list.insert()
-list.pop()
-list.remove()
+
+i is posiiton and x is value
+list.append(x)
+list.insert(i,x)
+list.pop(i)
+list.remove(x)
 list.count()
-list.extend()
-list.index()
+list.extend(L)
+list.index(x)
 list.reverse()
 list.sort()
 sum(list)
@@ -93,7 +95,7 @@ http-80 hyper text transfer protocol
 protocol- set of rule to predict the behaviour of next personal
 url-uniform resource locator
 
-never name your file socket.py because after that when you will import ocket in your same file at that time it will try to impot the file not the library.
+never name your file socket.py because after that when you will import socket in your same file at that time it will try to import the file not the library.
 
 xml-Extensible markup language
 JSON: javascript oriented notation - douglar corkford
@@ -106,3 +108,5 @@ socket
 urllib
 xml.etree.ElementTree as ES
 json
+
+dir(x) where x can be list or dict or string, dir lists out the possible methods of list or dict or string like remove(),insert(),append() etc.
