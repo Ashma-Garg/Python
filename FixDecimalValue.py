@@ -20,6 +20,10 @@ def plusMinus(arr):
         else:
             zc=zc+1
     print("{:.6f}".format(float(pc/n)))
+    # Also this method can be approched for fixed decimal values
+    # elif self.real == 0:
+    #         if self.imaginary >= 0:
+    #             result = "0.00+%.2fi" % (self.imaginary)
     print("{:.6f}".format(float(count/n)))
     print("{:.6f}".format(float(zc/n)))
 
