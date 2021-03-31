@@ -22,4 +22,12 @@ def name_format(person):
 
 if __name__ == '__main__':
     people = [raw_input().split() for i in range(int(raw_input()))]
+    #above line means:
+    # for i in range(int(raw_input())):
+    #     people[i]=raw_input().split()
+    #people will be:
+    #people=[[1,2,3],[4,5,6]]
+    #if it would have been people = raw_input().split() for i in range(int(raw_input()))
+    # then people would have been [1,2,3,4,5,6]
+    #conclusion: [] creates list on the right hand side of equation and returns list into the lsit present at left side of equation
     print '\n'.join(name_format(people))
