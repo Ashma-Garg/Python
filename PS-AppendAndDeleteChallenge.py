@@ -66,6 +66,7 @@ import sys
 def appendAndDelete(s, t, k):
     L=len(s)+len(t)
     i=0
+    # this order of condition in while loop matters
     while i<len(s) and i<len(t) and s[i]==t[i]:
         i=i+1
     if(L <= k + i*2 and L%2 == k%2 or L < k):
