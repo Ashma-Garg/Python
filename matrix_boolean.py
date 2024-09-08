@@ -1,6 +1,17 @@
 # Python3 Code For A Boolean Matrix Question
 def modifyMatrix(mat):
 
+	"""
+	Initializes first row and column with a value of 1 if there is a 1 present in any
+	position within them. It then propagates the presence of 1 to all other positions
+	in the matrix based on the first row and column values.
+
+	Args:
+	    mat (List[List[int]] | List[Dict[int, int]]): 2D matrix representation of an
+	        image, where each element at index `[i][j]` corresponds to a pixel in the
+	        image.
+
+	"""
 	# variables to check if there are any 1
 	# in first row and column
 	row_flag = False
@@ -44,6 +55,17 @@ def modifyMatrix(mat):
 
 def printMatrix(mat):
 
+	"""
+	Iterates through each element in a given matrix and prints it to the console. It
+	does so by iterating over each row, then printing all elements in that row before
+	moving on to the next.
+
+	Args:
+	    mat (List[List[int]] | List[List[float]] | List[List[str]]): 2-dimensional,
+	        containing elements that can be integers, floats or strings. It represents
+	        a matrix to be printed.
+
+	"""
 	for i in range(0, len(mat)):
 		for j in range(0, len(mat[0])):
 			print(mat[i][j], end="")
