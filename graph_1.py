@@ -1,11 +1,54 @@
 from collections import deque
 
 class GraphNode:
+	"""
+	Initializes an object to represent a node in a graph. It has two attributes:
+	`val`, which stores the value of the node, and `neighbors`, which is a list of
+	neighboring nodes connected to it. The node's neighbors are initialized as an
+	empty list by default.
+
+	Attributes:
+	    val (Union[int,str]): Initialized to a default value of 0. It represents the
+	        value associated with a node in a graph.
+	    neighbors (List[GraphNode]|List[int]): Initialized as an empty list by default.
+	        It represents a collection of neighboring nodes or their values, allowing
+	        for either node references or just their IDs in adjacency representation
+	        graphs.
+
+	"""
 	def __init__(self, val=0, neighbors=[]):
+		"""
+		Initializes an object with a value and a list of neighboring nodes. The value
+		defaults to 0, and the neighbors list defaults to an empty list if no value is
+		provided when creating a new node instance.
+
+		Args:
+		    val (int | float): 0 by default if not provided when instantiating an object
+		        from this class. It represents the value of the node being created.
+		    neighbors (List[Node | None]): Specified to be an empty list by default.
+		        This allows for the initialization of nodes with or without neighboring
+		        nodes.
+
+		"""
 		self.val = val
 		self.neighbors = neighbors
 
 def cloneGraph(src: GraphNode) -> GraphNode:
+	"""
+	Creates a deep copy of a graph, where each node in the original graph is replaced
+	by a new identical node with the same value and neighbors. The copied nodes are
+	stored in a dictionary for efficient lookup.
+
+	Args:
+	    src (GraphNode): Used as an input to the cloning process, representing the
+	        source graph from which a clone will be created. It denotes the starting
+	        point for the graph traversal.
+
+	Returns:
+	    GraphNode: A deep copy of the input graph represented by src, containing all
+	    nodes and their corresponding neighbors.
+
+	"""
 	# A Map to keep track of all the
 	# nodes which have already been created
 	m = {}
@@ -63,6 +106,16 @@ def buildGraph() -> GraphNode:
 # A simple bfs traversal of a graph to
 # check for proper cloning of the graph
 def bfs(src: GraphNode):
+	"""
+	Performs a breadth-first search traversal of a graph, starting from the source
+	node `src`. It visits each node in the graph level by level, printing its value
+	and address, and adding unvisited neighbors to a queue for further processing.
+
+	Args:
+	    src (GraphNode): Used to initialize the Breadth-First Search traversal from
+	        this node. It represents the source or starting node for the algorithm.
+
+	"""
 	visit = {}
 	q = deque()
 	q.append(src)
