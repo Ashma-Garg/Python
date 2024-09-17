@@ -1,0 +1,23 @@
+tea 	
+iced tea
+150
+
+bakery
+cookies
+250
+
+soaps
+handwash
+100
+
+rice
+basmati rice
+75
+
+candies
+jelly beans
+300
+
+lotions
+body lotions
+50
