@@ -127,7 +127,24 @@ def TaskThree():
             # Handle invalid categories
             print(f"Error: {s} category is not available. Please try another category.")
 
+            
+def make_a_file():
+    file_name = "my_name.txt"
+    with open(file_name, "w") as file:
+        file.write("Ashma")
+        file.close()
 
-TaskOne()
-TaskTwo()
-TaskThree()
+
+
+user_input = input("Which part do you want to run: ")
+
+if user_input == "1":
+    TaskOne()
+elif user_input == "2":
+    TaskTwo()
+elif user_input == "3":
+    TaskThree()
+elif user_input == "4":
+    make_a_file()
+else:
+    print("Invalid Command")
